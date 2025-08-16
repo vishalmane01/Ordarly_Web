@@ -33,7 +33,7 @@ const dashboards = [
 
 const DashboardsSection = () => {
   return (
-    <section className="py-20 bg-secondary/20">
+    <section id="dashboards" className="py-20 bg-secondary/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="heading-sans text-4xl lg:text-5xl mb-6 text-foreground">
