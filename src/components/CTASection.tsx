@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-primary/10">
+    <section id="contact" className="py-20 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-primary/10">
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto animate-fade-up">
           <h2 className="heading-sans text-4xl lg:text-5xl mb-6 text-foreground">
