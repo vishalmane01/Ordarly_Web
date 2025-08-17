@@ -5,6 +5,10 @@
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
+html {
+  @apply transition-colors duration-500 ease-in-out;
+}
+
 
 @layer base {
   :root {

@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import demoIllustration from "@/assets/demo.png"; 
 import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
 
 const BookDemoPage = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -12,24 +13,24 @@ const BookDemoPage = () => {
 
     if (!formRef.current) return;
 
-    emailjs
-      .sendForm(
-        "service_0ec535o", // replace with EmailJS service ID
-        "template_vng4lvj", // replace with EmailJS template ID
+    // wrap the emailjs promise in toast.promise
+    toast.promise(
+      emailjs.sendForm(
+        "service_0ec535o", // replace with your EmailJS service ID
+        "template_vng4lvj", // replace with your EmailJS template ID
         formRef.current,
-        "DUNUGfReDoZoRHP7Y" // replace with EmailJS public key
-      )
-      .then(
-        (result) => {
-          console.log("Email sent:", result.text);
-          alert("Your demo request has been submitted successfully!");
-          formRef.current?.reset();
-        },
-        (error) => {
-          console.log("Email error:", error.text);
-          alert("Failed to send request. Please try again.");
-        }
-      );
+        "DUNUGfReDoZoRHP7Y" // replace with your EmailJS public key
+      ),
+      {
+        loading: "Submitting your request...",
+        success: "Your demo request sent successfully!",
+        error: "Failed to send request. Please try again.",
+      }
+    )
+    .then(() => {
+      // reset form after success
+      formRef.current?.reset();
+    });
   };
 
   return (
@@ -132,7 +133,7 @@ const BookDemoPage = () => {
               <div className="sm:col-span-2 flex justify-center mt-6">
                 <Button
                   type="submit"
-                  variant="hero"
+                  variant="primary"
                   size="lg"
                   className="text-base px-10 py-4"
                 >
