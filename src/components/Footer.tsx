@@ -41,15 +41,24 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+       
           <div>
             <h4 className="heading-sans text-lg mb-6 text-background">Contact</h4>
             <ul className="space-y-3 text-background/70">
-              <li>ordarly@gmail.com</li>
-              <li>+91 9876543210</li>
+              <li>
+                <a href="mailto:ordarly@gmail.com" className="hover:text-background transition-colors duration-300">
+                  ordarly@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+918530097208" className="hover:text-background transition-colors duration-300">
+                  +91 8530097208
+                </a>
+              </li>
               <li>Kolhapur, India</li>
             </ul>
           </div>
+
         </div>
 
         <div className="border-t border-background/20 pt-8 text-center">
