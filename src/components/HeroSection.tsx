@@ -25,7 +25,7 @@ const HeroSection = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a href="#BookDemo">
-              <Button variant="heroSecondary" size="lg" className="text-base px-8 py-4">
+              <Button variant="primary" size="lg" className="text-base px-8 py-4">
                 Book a Demo
               </Button>
             </a>
