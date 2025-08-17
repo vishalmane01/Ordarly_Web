@@ -2,6 +2,14 @@ const ResponsivenessSection = () => {
   return (
     <section className="py-20 bg-muted/50">
       <div className="container mx-auto px-6">
+            <div className="rounded-2xl overflow-hidden shadow-[var(--shadow-strong)] hover-glow">
+            <img 
+              src="/lovable-uploads/responsive.png" 
+              alt="Ordarly POS System - Multi-device responsiveness showing admin dashboard, mobile ordering interface, and kitchen display" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
+
         <div className="text-center mb-16">
           <h2 className="heading-sans text-3xl sm:text-4xl lg:text-5xl mb-6 text-foreground">
             Works Seamlessly Across All Devices
@@ -12,14 +20,7 @@ const ResponsivenessSection = () => {
         </div>
 
         <div className="relative max-w-6xl mx-auto">
-          <div className="rounded-2xl overflow-hidden shadow-[var(--shadow-strong)] hover-glow">
-            <img 
-              src="/lovable-uploads/65cf0b96-40ff-4f65-8196-b8374b0647a7.png" 
-              alt="Ordarly POS System - Multi-device responsiveness showing admin dashboard, mobile ordering interface, and kitchen display" 
-              className="w-full h-auto object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-transparent"></div>
-          </div>
+
           
           {/* Feature highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">

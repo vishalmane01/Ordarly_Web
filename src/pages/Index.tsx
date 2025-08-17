@@ -8,6 +8,7 @@ import DashboardsSection from "@/components/DashboardsSection";
 import PricingSection from "@/components/PricingSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import BookDemoPage from "@/components/BookDemo";
 
 const Index = () => {
   return (
@@ -21,7 +22,9 @@ const Index = () => {
       <DashboardsSection />
       <PricingSection />
       <CTASection />
+      <BookDemoPage />
       <Footer />
+      
     </div>
   );
 };

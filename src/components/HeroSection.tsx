@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/hero.png";
 
 const HeroSection = () => {
   return (
@@ -27,22 +27,22 @@ const HeroSection = () => {
             <Button variant="hero" size="lg" className="text-base px-8 py-4">
               Get Started
             </Button>
-            <Button variant="heroSecondary" size="lg" className="text-base px-8 py-4">
-              Book a Demo
-            </Button>
+            <a href="#BookDemo">
+              <Button variant="heroSecondary" size="lg" className="text-base px-8 py-4">
+                Book a Demo
+              </Button>
+            </a>
           </div>
         </div>
 
         {/* Hero Image */}
         <div className="relative animate-fade-up" style={{ animationDelay: '0.2s' }}>
-          <div className="relative rounded-2xl overflow-hidden shadow-[var(--shadow-strong)] hover-glow">
+          <div className="relative rounded-2xl overflow-hidden ">
             <img 
               src={heroImage} 
               alt="Ordarly POS System Interface" 
               className="w-full h-auto object-cover"
             />
-            {/* Overlay Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-transparent"></div>
           </div>
           
           {/* Floating Elements */}

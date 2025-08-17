@@ -63,9 +63,11 @@ const Navbar = () => {
           {/* Right Side - Theme Toggle and CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
-            <Button variant="outline" size="sm">
+            <a href="#BookDemo">
+              <Button variant="outline" size="sm">
               Book Demo
             </Button>
+            </a>
             <Button size="sm">
               Get Started
             </Button>

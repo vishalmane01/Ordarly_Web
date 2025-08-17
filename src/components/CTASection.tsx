@@ -14,9 +14,11 @@ const CTASection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="text-base px-12 py-4">
-              Book a Demo Today
-            </Button>
+            <a href="#BookDemo">
+              <Button variant="hero" size="lg" className="text-base px-12 py-4">
+                Book a Demo Today
+              </Button>
+            </a>
             <div className="text-sm text-muted-foreground">
               No credit card required • Free 30-day trial
             </div>

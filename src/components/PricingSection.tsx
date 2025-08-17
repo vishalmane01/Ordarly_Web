@@ -104,16 +104,10 @@ const PricingSection = () => {
               </ul>
 
               <div className="space-y-3">
-                <Button 
-                  variant={tier.recommended ? "hero" : "default"} 
-                  className="w-full"
-                  size="lg"
-                >
-                  Start Free Trial
-                </Button>
+                <a href="#BookDemo">
                 <Button variant="outline" className="w-full" size="lg">
                   Book Demo
-                </Button>
+                </Button></a>
               </div>
             </div>
           ))}

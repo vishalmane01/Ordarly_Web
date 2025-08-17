@@ -45,16 +45,16 @@ const Footer = () => {
           <div>
             <h4 className="heading-sans text-lg mb-6 text-background">Contact</h4>
             <ul className="space-y-3 text-background/70">
-              <li>hello@ordarly.com</li>
+              <li>ordarly@gmail.com</li>
               <li>+91 9876543210</li>
-              <li>Mumbai, India</li>
+              <li>Kolhapur, India</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-background/20 pt-8 text-center">
           <p className="text-background/60">
-            © 2024 Ordarly. All rights reserved.
+            © 2025 Ordarly. All rights reserved.
           </p>
         </div>
       </div>
