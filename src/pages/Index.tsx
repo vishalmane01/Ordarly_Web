@@ -9,6 +9,7 @@ import PricingSection from "@/components/PricingSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import BookDemoPage from "@/components/BookDemo";
+import WhyCustomersLoveUs from "@/components/BentoGrid";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <ResponsivenessSection />
+      <WhyCustomersLoveUs />
       <AboutSection />
       <BenefitsSection />
       <ServicesSection />

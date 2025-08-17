@@ -34,7 +34,7 @@ const Footer = () => {
           <div>
             <h4 className="heading-sans text-lg mb-6 text-background">Quick Links</h4>
             <ul className="space-y-3">
-              <li><a href="#about" className="text-background/70 hover:text-background transition-colors duration-300">About</a></li>
+              <li><a href="#bento-grid" className="text-background/70 hover:text-background transition-colors duration-300">About</a></li>
               <li><a href="#services" className="text-background/70 hover:text-background transition-colors duration-300">Services</a></li>
               <li><a href="#pricing" className="text-background/70 hover:text-background transition-colors duration-300">Pricing</a></li>
               <li><a href="#contact" className="text-background/70 hover:text-background transition-colors duration-300">Contact</a></li>

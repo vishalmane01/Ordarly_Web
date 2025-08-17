@@ -17,7 +17,7 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: "About", href: "#about" },
+    { name: "About", href: "#bento-grid" },
     { name: "Benefits", href: "#benefits" },
     { name: "Services", href: "#services" },
     { name: "Dashboards", href: "#dashboards" },
@@ -68,9 +68,6 @@ const Navbar = () => {
               Book Demo
             </Button>
             </a>
-            <Button size="sm">
-              Get Started
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}

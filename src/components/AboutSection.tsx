@@ -1,46 +1,37 @@
+"use client";
+import logo from "@/assets/logo.png"
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-20 bg-background text-foreground">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div className="animate-fade-up">
-            <h2 className="heading-sans text-4xl lg:text-5xl mb-8 text-foreground">
-              Who We Are
-            </h2>
-            <p className="text-body text-lg leading-relaxed mb-8">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-8">Who We Are</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               Ordarly is on a mission to transform restaurants and cafés with efficient POS 
               solutions that enhance guest experiences, streamline operations, and provide 
               real-time insights.
             </p>
-            <p className="text-body text-lg leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               We believe that technology should empower restaurant owners and staff to focus 
-              on what they do best - creating exceptional dining experiences for their guests.
+              on what they do best — creating exceptional dining experiences for their guests.
             </p>
           </div>
 
           {/* Visual */}
-          <div className="relative animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-gradient-card rounded-2xl p-8 shadow-[var(--shadow-medium)] hover-lift">
-              <div className="grid grid-cols-2 gap-6">
-                {/* Stats */}
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                  <div className="text-sm text-muted-foreground">Restaurants Served</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">99.9%</div>
-                  <div className="text-sm text-muted-foreground">Uptime</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                  <div className="text-sm text-muted-foreground">Support</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">10+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
-                </div>
-              </div>
+          <div className="relative animate-fade-up lg:flex lg:justify-center" style={{ animationDelay: "0.2s" }}>
+            <div className="bg-card border border-border rounded-2xl shadow-lg p-8 flex flex-col items-center text-center max-w-md mx-auto">
+              <img
+                src={logo}// replace with your image
+                alt="About Ordarly"
+                className="w-64 h-64 object-contain mb-6"
+              />
+              <h3 className="text-2xl font-semibold mb-3">The Future of Dine-in</h3>
+              <p className="text-muted-foreground text-base">
+                Ordarly helps restaurants serve faster, manage smarter, and delight guests effortlessly.
+                With real-time updates and customization, it feels like it’s built just for you.
+              </p>
             </div>
           </div>
         </div>

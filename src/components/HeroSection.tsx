@@ -24,9 +24,6 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button variant="hero" size="lg" className="text-base px-8 py-4">
-              Get Started
-            </Button>
             <a href="#BookDemo">
               <Button variant="heroSecondary" size="lg" className="text-base px-8 py-4">
                 Book a Demo
@@ -37,13 +34,14 @@ const HeroSection = () => {
 
         {/* Hero Image */}
         <div className="relative animate-fade-up" style={{ animationDelay: '0.2s' }}>
-          <div className="relative rounded-2xl overflow-hidden ">
+          <div className="relative rounded-2xl overflow-hidden hidden md:block">
             <img 
               src={heroImage} 
               alt="Ordarly POS System Interface" 
               className="w-full h-auto object-cover"
             />
           </div>
+
           
           {/* Floating Elements */}
           <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-xl animate-pulse"></div>
